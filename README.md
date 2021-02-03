@@ -49,8 +49,8 @@ docker-compose down
 - tensorflow
 - scikit-learn
 - pip:
-- jedi==0.17.2
-- python-chess
+    - jedi==0.17.2  
+    - python-chess
 ```
 
 ## Quelle der Jupyterdaten
