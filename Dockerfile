@@ -1,10 +1,10 @@
 FROM jupyter/minimal-notebook
 
 ARG conda_env=ai
-ARG py_ver=3.7
 
 COPY --chown=${NB_UID}:${NB_GID} stroetmann-data/. /home/$NB_USER/stroetmann-data/
 COPY --chown=${NB_UID}:${NB_GID} env.yml /home/$NB_USER/tmp/
+
 RUN cd /home/$NB_USER/tmp/ && \
 	conda env create -p $CONDA_DIR/envs/$conda_env -f env.yml && \
     conda clean --all -f -y
