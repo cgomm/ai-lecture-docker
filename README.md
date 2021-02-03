@@ -48,6 +48,7 @@ docker-compose down
 - seaborn
 - tensorflow
 - scikit-learn
+- nltk
 - pip:
     - jedi==0.17.2  
     - python-chess
